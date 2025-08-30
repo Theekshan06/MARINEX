@@ -1,0 +1,29 @@
+[theme]
+# Ocean-themed colors for FloatChat
+primaryColor = "#1f77b4"          # Blue for ocean theme
+backgroundColor = "#ffffff"        # Clean white background
+secondaryBackgroundColor = "#f0f8ff"  # Light blue tint
+textColor = "#2c3e50"             # Dark blue-gray for readability
+font = "sans serif"               # Clean, modern font
+
+[server]
+# Performance and upload settings
+maxUploadSize = 200               # Max file upload size in MB
+maxMessageSize = 200              # Max message size in MB
+enableCORS = false                # Cross-origin requests
+enableXsrfProtection = true       # Security protection
+
+[browser]
+# Browser behavior
+gatherUsageStats = false          # Don't send usage stats to Streamlit
+showErrorDetails = true           # Show detailed errors (good for debugging)
+
+[global]
+# App behavior
+developmentMode = false           # Set to true if still developing
+showWarningOnDirectExecution = false
+
+[client]
+# UI behavior
+showErrorDetails = true
+toolbarMode = "auto"              # Show toolbar when needed
