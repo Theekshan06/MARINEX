@@ -10,8 +10,8 @@ from datetime import datetime
 
 # Set page configuration
 st.set_page_config(
-    page_title="FloatChat - ARGO Data Explorer",
-    page_icon="🌊",
+    page_title="Marinex - ARGO Data Explorer",
+    page_icon="",
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -602,7 +602,7 @@ def process_user_query(user_query):
 def main():
     # Sidebar
     with st.sidebar:
-        st.title("FloatChat 🌊")
+        st.title("Marinex ")
         st.markdown("**ARGO Data Explorer**")
         
         # Query input
@@ -613,15 +613,14 @@ def main():
         )
         
         # Process button
-        process_btn = st.button("🚀 Process Query", type="primary")
+        process_btn = st.button(" Process Query", type="primary")
         
         # Example queries
-        st.markdown("### 💡 Example Queries")
+        st.markdown("###  Example Queries")
         examples = [
-            "Show me the last 10 temperature measurements in the Indian Ocean",
-            "Plot salinity vs pressure for float 2902769",
-            "Which floats recorded the highest temperatures in the last month?",
-            "Show me a map of all float measurements with salinity above 36 PSU"
+            "Show me a map of all float measurements with salinity above 36 PSU",
+            "Show me one float which is farthest from chennai",
+            "show me float having highest temperature among all other floats"
         ]
         
         for example in examples:
@@ -630,7 +629,7 @@ def main():
                 process_btn = True
     
     # Main content
-    st.title("🌊 ARGO Float Data Dashboard")
+    st.title(" Marinex Data Dashboard")
     
     # Initialize session state
     if 'results' not in st.session_state:
@@ -651,7 +650,7 @@ def main():
     # Display results if available
     if st.session_state.df is not None:
         # Display natural language response
-        st.markdown("### 📊 Results")
+        st.markdown("### Results")
         st.success(st.session_state.results)
         
         # Display data
