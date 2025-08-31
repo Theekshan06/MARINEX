@@ -1,7 +1,11 @@
 streamlit
-psycopg2-binary
 pandas
+numpy
 matplotlib
 folium
 streamlit-folium
+plotly
+requests
+psycopg2-binary
 groq
+gitpython
