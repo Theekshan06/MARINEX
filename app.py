@@ -632,7 +632,8 @@ st.markdown("""
         border-radius: 12px;
         border: 1px solid #404040;
     }
-</style>""", unsafe_allow_html=True)
+</style>
+""", unsafe_allow_html=True)
 
 # Initialize the Groq client
 @st.cache_resource
